@@ -1,4 +1,4 @@
-node_module
-dist
+/node_module
+/dist
 backEndBC/node_module
 backEndBC/dist

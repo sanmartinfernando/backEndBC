@@ -2,7 +2,6 @@ import { json } from "express";
 
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema; 
-  
 
 export const UserSchema = new Schema({
     nombres: String,
