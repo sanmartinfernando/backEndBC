@@ -28,9 +28,9 @@ export class UsersController {
       email: request['body']['email'],
       telefono: request['body']['telefono'],
       sexo: request['body']['sexo'],
-      fotoPerfil: request['file']['path'],
-      idFarmacia: request['body']['idFarmacia'],
-      rol: request['body']['rol'],
+      //fotoPerfil: request['file']['path'],
+      //idFarmacia: request['body']['idFarmacia'],
+      //rol: request['body']['rol'],
       username: request['body']['username'],
       password: request['body']['password']
     }

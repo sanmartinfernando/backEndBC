@@ -12,10 +12,10 @@ export const UserSchema = new Schema({
     cedula: {type: String,  unique: true},
     telefono: String,
     fotoPerfil: {type: String},
-    sexo: String,
+    sexo: String, 
     email: {type: String,  unique: true},
-    rol: {type: Schema.ObjectId, ref: 'Roles'},
-    idFarmacia: {type: Schema.ObjectId, ref: 'Farmacia'},
+   // rol: {type: Schema.ObjectId, ref: 'Roles'},
+   // idFarmacia: {type: Schema.ObjectId, ref: 'Farmacia'},
 
     estado: {type: Boolean, default: true},
 });
