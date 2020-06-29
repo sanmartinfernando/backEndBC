@@ -1,7 +1,7 @@
 export class UserDto {
     nombres: String;
     apellidos: String;
-    username: {type: String, index:true, unique: true};
+    //username: {type: String, index:true, unique: true};
     password: {type: String, index:true};
     rol: String;
     cedula: {type: String,  unique: true};

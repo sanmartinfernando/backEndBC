@@ -7,8 +7,8 @@ import { JwtService } from '@nestjs/jwt';
 export class AuthService {
   constructor(private readonly usersService: UsersService, private readonly jwtService: JwtService) { }
 
-  async validateUser(username: string, pass: string): Promise<any> {
-    const user = await this.usersService.findOne(username);
+  async validateUser(email: string, pass: string): Promise<any> {
+    const user = await this.usersService.findOne(email);
     console.log('validate', user);
     console.log('validate', user.length);
 

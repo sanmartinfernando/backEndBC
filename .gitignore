@@ -2,3 +2,5 @@
 /dist
 backEndBC/node_module
 backEndBC/dist
+node_module
+dist

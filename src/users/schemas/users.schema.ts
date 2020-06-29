@@ -1,18 +1,18 @@
 import { json } from "express";
 
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema; 
+var Schema = mongoose.Schema;
 
 export const UserSchema = new Schema({
     nombres: String,
     apellidos: String,
-    username: {type: String, index:true, unique: true},
-    password: {type: String, index:true},
+    //username: {type: String, index: true, unique: true},
+    password: {type: String, index: true},
     cedula: {type: String,  unique: true},
     telefono: String,
     fotoPerfil: {type: String},
-    sexo: String, 
-    email: {type: String,  unique: true},
+    sexo: String,
+    email: {type: String,  index: true, unique: true},
    // rol: {type: Schema.ObjectId, ref: 'Roles'},
    // idFarmacia: {type: Schema.ObjectId, ref: 'Farmacia'},
 
